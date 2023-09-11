@@ -1,6 +1,6 @@
-**Event Booking Web Application**
+# Event Booking Web Application**
 
-**Description:**
+## Description:**
 
 The Event Booking Web Application is a modern, user-friendly platform that simplifies event discovery, booking, and management. This open-source project is designed for event organizers and attendees alike, providing a seamless and efficient experience. 
 
@@ -44,7 +44,7 @@ The Event Booking Web Application is a modern, user-friendly platform that simpl
 
 5. Open your web browser and navigate to `http://localhost:3000` to access the application.
 
-**Contributing:**
+## Contributing:**
 
 We welcome contributions from the community to improve and enhance this Event Booking Web Application. If you'd like to contribute, please follow these steps:
 
@@ -62,11 +62,10 @@ We welcome contributions from the community to improve and enhance this Event Bo
 
 This project is open-source and available under the MIT License. Feel free to use and modify the code to meet your specific needs.
 
-**Authors:**
+**Author:**
 
-- [Your Name]
-- [Contributor 1]
-- [Contributor 2]
+- [Mayank Arya]
+
 
 **Acknowledgments:**
 
