@@ -219,7 +219,7 @@ function Dashboard() {
           </Link>
           <Link to='/create'><button className="events-button">Create Event</button></Link>
         
-            <button onClick={showUserProfileModal} className="profile-button">My Profile</button>
+            <button onClick={openUserProfileModal} className="profile-button">My Profile</button>
 
           <span>{userData.name}</span>
         </div>

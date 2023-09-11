@@ -25,7 +25,6 @@ function UserProfileModel({ onClose, onEdit }) {
         ) : (
           <p>Loading user profile...</p>
         )}
-        <button onClick={onEdit}>Edit Profile</button>
         <button onClick={onClose}>Close</button>
       </div>
     </div>
