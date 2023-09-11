@@ -1,0 +1,61 @@
+/* CSS for Event Cards Container */
+.event-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* flex-wrap: wrap; */
+    justify-content: space-between; /* Spread cards evenly in a row */
+    gap: 20px; /* Adjust the gap between cards as needed */
+  }
+  
+  /* CSS for Event Card */
+  .event-card {
+    /* flex: 0 calc(33.33% - 20px); */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    background-color: #fff;
+  }
+  
+  .event-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  /* CSS for Event Card Heading */
+  .event-card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* CSS for Event Card Description */
+  .event-card p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  
+  /* CSS for Book Button */
+  .book-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3; /* Lighter color on hover */
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .event-card {
+      flex: 0 calc(50% - 20px); /* Two cards per row on smaller screens */
+    }
+  }
+  
