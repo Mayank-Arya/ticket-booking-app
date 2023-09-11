@@ -1,6 +1,9 @@
-# Event Booking Web Application**
+# Event Booking Web Application 
 
-## Description:**
+* Backend deployment - https://ticket-a8ez.onrender.com
+* Frontend deployment - https://ticket-booking-app-iklx.vercel.app/
+
+## Description:
 
 The Event Booking Web Application is a modern, user-friendly platform that simplifies event discovery, booking, and management. This open-source project is designed for event organizers and attendees alike, providing a seamless and efficient experience. 
 
@@ -14,23 +17,21 @@ The Event Booking Web Application is a modern, user-friendly platform that simpl
 
 4. **Ticket Booking:** Streamlined ticket booking process with instant confirmation.
 
-5. **User Profiles:** View and edit user profiles, including names, email addresses, and additional details.
+5. **Event Creation:** Event organizers can create and publish events with a user-friendly form.
 
-6. **Event Creation:** Event organizers can create and publish events with a user-friendly form.
+6. **Pop-up Notifications:** Instant feedback on successful event bookings and user profile updates.
 
-7. **Pop-up Notifications:** Instant feedback on successful event bookings and user profile updates.
+7. **Editable Profiles:** Users can manage and update their profile information at any time.
 
-8. **Editable Profiles:** Users can manage and update their profile information at any time.
+8. **Security:** Robust security measures, including token-based authentication and data encryption, ensure user data remains protected.
 
-9. **Security:** Robust security measures, including token-based authentication and data encryption, ensure user data remains protected.
+9. **Responsive Design:** The application is fully responsive, offering a seamless experience on various devices.
 
-10. **Responsive Design:** The application is fully responsive, offering a seamless experience on various devices.
+10. **User-Friendly Interface:** A clean and intuitive UI design enhances the overall user experience.
 
-11. **User-Friendly Interface:** A clean and intuitive UI design enhances the overall user experience.
+11. **Event Management:** Organizers can easily view and manage their events, along with real-time updates and analytics.
 
-12. **Event Management:** Organizers can easily view and manage their events, along with real-time updates and analytics.
-
-13. **Loading Indicators:** Visual loading indicators provide feedback during data retrieval and submission.
+12. **Loading Indicators:** Visual loading indicators provide feedback during data retrieval and submission.
 
 **Getting Started:**
 
