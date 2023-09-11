@@ -56,8 +56,6 @@ We welcome contributions from the community to improve and enhance this Event Bo
 
 4. Provide detailed information about the changes you've made and why they are necessary.
 
-5. Our team will review your pull request, and once approved, your changes will be merged into the main branch.
-
 **License:**
 
 This project is open-source and available under the MIT License. Feel free to use and modify the code to meet your specific needs.
