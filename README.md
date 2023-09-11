@@ -7,6 +7,17 @@
 
 The Event Booking Web Application is a modern, user-friendly platform that simplifies event discovery, booking, and management. This open-source project is designed for event organizers and attendees alike, providing a seamless and efficient experience. 
 
+## Tech Stack:
+* HTML
+* CSS
+* JavaScript
+* React.JS
+* Node.JS
+* MongoDB
+* Vercel
+* Render
+* GitHub
+
 **Features:**
 
 1. **User Authentication:** Secure user registration and login with token-based authentication.
