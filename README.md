@@ -46,7 +46,7 @@ The Event Booking Web Application is a modern, user-friendly platform that simpl
 
 ## Contributing:**
 
-We welcome contributions from the community to improve and enhance this Event Booking Web Application. If you'd like to contribute, please follow these steps:
+I welcome contributions from the community to improve and enhance this Event Booking Web Application. If you'd like to contribute, please follow these steps:
 
 1. Fork the repository and create a new branch.
 
