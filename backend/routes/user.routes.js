@@ -17,7 +17,7 @@ userRouter.post('/register', async (req, res) => {
             return res.status(400).json({ error: 'User already registered, please login instead.' });
         }
 
-        const hashed = await bcrypt.hash(password, 10); // Increase the bcrypt cost factor for stronger hashing
+        const hashed = await bcrypt.hash(password, 10); 
         const newUser = new User({ username, email, password: hashed });
         await newUser.save();
 
@@ -52,6 +52,18 @@ userRouter.post('/login', async (req, res) => {
 });
 
 
+userRouter.get("/:id", async(req,res) => {
+    const userId = req.params.id
+    try{
+      const user = await User.findById(userId)
+      res.status(200).send(uesr)
+    }
+    catch(err){
+        console.log(err.message)
+    }
+})
+
+
 // User Update endpoint
 userRouter.put('/:id', async (req, res) => {
     const userId = req.params.id;
@@ -65,8 +77,8 @@ userRouter.put('/:id', async (req, res) => {
         }
 
         // Update user information
-        user.username = username || user.username; // Update only if provided
-        user.email = email || user.email; // Update only if provided
+        user.username = username || user.username; 
+        user.email = email || user.email;
 
         // Save the updated user
         await user.save();

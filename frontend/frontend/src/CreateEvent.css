@@ -1,0 +1,102 @@
+/* CreateEvent.css */
+
+.create-event {
+    background-color: #f3f3f3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+  
+  .navbar img {
+    height: 40px;
+  }
+  
+  .navbar .left span {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  .navbar .right button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Create Event Form Styles */
+  .create-event-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 2rem;
+    max-width: 400px;
+  }
+  
+  .create-event-form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .create-event-form input,
+  .create-event-form textarea,
+  .create-event-form button {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .create-event-form input[type="date"] {
+    appearance: none;
+    padding-right: 20px;
+    /* background: url("") no-repeat right center; */
+  }
+  
+  .create-event-form textarea {
+    height: 100px;
+  }
+  
+  .create-event-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .create-event-form button:hover {
+    background-color: #555;
+  }
+  
+  /* Loading Spinner Styles */
+  .spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

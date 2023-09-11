@@ -59,3 +59,52 @@
     }
   }
   
+
+  /* Pop-up styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure the pop-up is above other content */
+}
+
+.popup p {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.popup button:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Success Pop-up specific styles */
+.success-popup p {
+  color: #28a745; /* Green color for success messages */
+}
+
+/* Error Pop-up specific styles */
+.error-popup p {
+  color: #dc3545; /* Red color for error messages */
+}

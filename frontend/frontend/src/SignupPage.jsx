@@ -1,21 +1,19 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link for navigation
+import { Link } from 'react-router-dom'; 
 import './SignupPage.css';
 
 function SignupPage() {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isLoading, setIsLoading] = useState(false); // State for loading indicator
+    const [isLoading, setIsLoading] = useState(false);
 
     const handleSignup = async (e) => {
         e.preventDefault();
-
+    
         try {
-            // Set loading state to true
             setIsLoading(true);
-
-            // Make an API request to your backend for user registration
+    
             const response = await fetch('http://localhost:9090/user/register', {
                 method: 'POST',
                 headers: {
@@ -23,13 +21,16 @@ function SignupPage() {
                 },
                 body: JSON.stringify({ username, email, password }),
             });
-
+    
             if (response.ok) {
                 const data = await response.json();
+    
                 localStorage.setItem('token', data.token);
+                localStorage.setItem('username', username); 
+                localStorage.setItem('email', email)
+    
                 alert("User registered successfully!!");
             
-                // Redirect to the dashboard after successful signup
                 window.location.href = '/dashboard';
             } else if (response.status === 400) {
                 // User already exists, display an alert
@@ -41,7 +42,6 @@ function SignupPage() {
         } catch (error) {
             console.error('Error during signup:', error);
         } finally {
-            // Set loading state back to false, whether signup succeeds or fails
             setIsLoading(false);
         }
     };
@@ -49,7 +49,6 @@ function SignupPage() {
     return (
         <div className="signup-container">
             {isLoading && (
-                // Show loading spinner when isLoading is true
                 <div className="loader-overlay">
                     <div className="loader"></div>
                 </div>
@@ -79,7 +78,6 @@ function SignupPage() {
                         onChange={(e) => setPassword(e.target.value)}
                         required
                     />
-                    {/* Show loading spinner when isLoading is true */}
                     {isLoading ? (
                         <div className="spinner"></div>
                     ) : (

@@ -3,7 +3,6 @@ Dashboard container
     padding: 20px;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -14,7 +13,6 @@ Dashboard container
     padding: 10px 20px;
 }
 
-/* Navbar left side (logo and app name) */
 .navbar .left {
     display: flex;
     align-items: center;
@@ -258,8 +256,8 @@ Dashboard container
 
 /* Add hover effect */
 .Edit:hover {
-    background-color: #0e9a6c; /* Darker color on hover */
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #0e9a6c; 
+    transform: scale(1.05); 
 }
 
 .Delete:hover {
